@@ -43,3 +43,9 @@ set statusline+=[LOW=%l/%L]
 set foldlevel=99
 set backspace=indent,eol,start
 set mouse=a
+
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --no-heading
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
+

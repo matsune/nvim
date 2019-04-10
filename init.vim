@@ -17,3 +17,5 @@ syntax enable
 
 let g:python3_host_prog = expand('/usr/local/bin/python3')
 
+runtime! options.rc.vim
+runtime! keymap.rc.vim
