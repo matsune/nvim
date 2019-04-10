@@ -6,4 +6,4 @@ call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'nor
 nnoremap <silent> <C-p> :<C-u>Denite file_rec<CR>
 
 nnoremap <silent> <C-g> :<C-u>Denite grep<CR>
-nnoremap <silent> <C-f> :<C-u>Denite line<CR>
+nnoremap <silent> <C-l> :<C-u>Denite line<CR>
