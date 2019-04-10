@@ -12,3 +12,22 @@ hook_add = '''
   nnoremap <silent><C-e> :NERDTreeToggle<CR>
 '''
 
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-go.vim
+'''
+
+[[plugins]]
+repo = 'zchee/deoplete-go'
+build = 'make'
+on_ft = 'go'
+depends = ['deoplete.nvim']
+hook_source = '''
+    let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
+'''
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
