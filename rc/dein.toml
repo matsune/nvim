@@ -20,7 +20,7 @@ hook_add = '''
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
-  nnoremap <silent><C-e> :NERDTreeToggle<CR>
+  source ~/.config/nvim/plugins/nerdtree.vim
 '''
 
 [[plugins]]
