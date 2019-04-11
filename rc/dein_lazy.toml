@@ -1,15 +1,9 @@
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 if = 'has("nvim")'
-on_i = 1
+on_event = 'InsertEnter'
 hook_add = '''
 	source ~/.config/nvim/plugins/deoplete.vim
-'''
-
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-  nnoremap <silent><C-e> :NERDTreeToggle<CR>
 '''
 
 [[plugins]]
@@ -30,4 +24,8 @@ hook_source = '''
 
 [[plugins]]
 repo = 'SirVer/ultisnips'
+on_event = 'InsertEnter'
 
+[[plugins]]
+repo = 'honza/vim-snippets'
+on_event = 'InsertEnter'
