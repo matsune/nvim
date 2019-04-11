@@ -34,3 +34,8 @@ let g:python3_host_prog = expand('/usr/local/bin/python3')
 
 runtime! rc/options.rc.vim
 runtime! rc/keymap.rc.vim
+
+let g:solarized_termcolors=16
+syntax enable
+set background=dark
+colorscheme solarized
