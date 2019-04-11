@@ -1,4 +1,3 @@
-" mappings
 nnoremap s <Nop>
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
@@ -25,6 +24,9 @@ nnoremap sq :<C-u>q<CR>
 nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
+
+nnoremap <silent><C-j> :bprev<CR>
+nnoremap <silent><C-l> :bnext<CR>
 
 nnoremap <leader>r :e!<CR>
 
