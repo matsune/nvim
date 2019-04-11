@@ -25,3 +25,4 @@ hook_add = '''
 
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
+

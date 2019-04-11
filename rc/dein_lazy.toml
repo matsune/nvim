@@ -29,3 +29,9 @@ on_event = 'InsertEnter'
 [[plugins]]
 repo = 'honza/vim-snippets'
 on_event = 'InsertEnter'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-gitgutter.vim
+'''
