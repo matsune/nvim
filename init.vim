@@ -39,3 +39,4 @@ let g:solarized_termcolors=16
 syntax enable
 set background=dark
 colorscheme solarized
+

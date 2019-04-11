@@ -24,7 +24,4 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-
-[[plugins]]
 repo = 'altercation/vim-colors-solarized'
