@@ -26,3 +26,15 @@ hook_add = '''
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
 
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+  source ~/.config/nvim/plugins/airline.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
