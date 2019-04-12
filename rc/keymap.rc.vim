@@ -26,7 +26,7 @@ nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
 nnoremap <silent><C-j> :bprev<CR>
-nnoremap <silent><C-l> :bnext<CR>
+nnoremap <silent><C-k> :bnext<CR>
 
 nnoremap <leader>r :e!<CR>
 
