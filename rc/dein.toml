@@ -6,16 +6,13 @@ repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
-hook_add = '''
-let g:ctrlp_map = '<Nop>'
-'''
-
-[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/denite.vim
 '''
+
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -24,17 +21,14 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'altercation/vim-colors-solarized'
-
-[[plugins]]
 repo = 'vim-airline/vim-airline'
 hook_add = '''
   source ~/.config/nvim/plugins/airline.vim
 '''
+depends = ['vim-airline-themes', 'vim-devicons']
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
-

@@ -1,9 +1,14 @@
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
-if = 'has("nvim")'
 on_event = 'InsertEnter'
 hook_add = '''
 	source ~/.config/nvim/plugins/deoplete.vim
+'''
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+hook_add = '''
+let g:ctrlp_map = '<Nop>'
 '''
 
 [[plugins]]
