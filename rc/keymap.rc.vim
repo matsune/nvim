@@ -27,7 +27,7 @@ nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
 nnoremap <silent><C-j> :bprev<CR>
 nnoremap <silent><C-k> :bnext<CR>
-nnoremap <silent><C-b>d :bd<CR>
+nnoremap <leader>x :bd<CR>
 
 nnoremap <leader>r :e!<CR>
 
