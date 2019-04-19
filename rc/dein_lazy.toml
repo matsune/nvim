@@ -40,3 +40,10 @@ repo = 'airblade/vim-gitgutter'
 hook_add = '''
   source ~/.config/nvim/plugins/gitgutter.vim
 '''
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = 'rust'
+hook_add = '''
+  source ~/.config/nvim/plugins/rust.vim
+'''
