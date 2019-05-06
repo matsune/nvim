@@ -6,6 +6,15 @@ repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-lsp.vim
+'''
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
   source ~/.config/nvim/plugins/denite.vim
