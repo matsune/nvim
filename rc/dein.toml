@@ -44,3 +44,9 @@ repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
 repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'osyo-manga/vim-over'
+hook_add = '''
+  nnoremap <silent> <Leader>m :OverCommandLine<CR>
+'''

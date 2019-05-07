@@ -8,4 +8,4 @@ let g:go_decls_mode = 'ctrlp'
 au FileType go setlocal foldmethod=syntax
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
 
-nnoremap <silent> <C-w> :GoDecls<CR>
+au FileType go nnoremap <silent> <C-w> :GoDecls<CR>
