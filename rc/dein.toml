@@ -9,9 +9,11 @@ build = 'make'
 repo = 'prabirshrestha/async.vim'
 
 [[plugins]]
-repo = 'prabirshrestha/vim-lsp'
+repo = 'autozimu/LanguageClient-neovim'
+build = 'bash install.sh'
+rev = 'next'
 hook_add = '''
-  source ~/.config/nvim/plugins/vim-lsp.vim
+  source ~/.config/nvim/plugins/LanguageClient-neovim.vim
 '''
 
 [[plugins]]
