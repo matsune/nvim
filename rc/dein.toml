@@ -52,3 +52,6 @@ repo = 'osyo-manga/vim-over'
 hook_add = '''
   nnoremap <silent> <Leader>m :OverCommandLine<CR>
 '''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'

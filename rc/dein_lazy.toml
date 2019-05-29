@@ -19,23 +19,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'zchee/deoplete-go'
-build = 'make'
-on_ft = 'go'
-depends = ['deoplete.nvim']
-hook_source = '''
-    let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
-'''
-
-[[plugins]]
-repo = 'SirVer/ultisnips'
-on_event = 'InsertEnter'
-
-[[plugins]]
-repo = 'honza/vim-snippets'
-on_event = 'InsertEnter'
-
-[[plugins]]
 repo = 'airblade/vim-gitgutter'
 hook_add = '''
   source ~/.config/nvim/plugins/gitgutter.vim
@@ -49,8 +32,15 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'sebastianmarkow/deoplete-rust'
-on_ft = 'rust'
+repo = 'Shougo/neosnippet'
 hook_source = '''
-  source ~/.config/nvim/plugins/deoplete-rust.vim
+  imap <C-k> <Plug>(neosnippet_expand_or_jump)
+  smap <C-k> <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k> <Plug>(neosnippet_expand_target)
+  if has('conceal')
+    set conceallevel=2 concealcursor=niv
+  endif
 '''
+on_i  = 1
+on_ft = ['snippet']
+depends = ['neosnippet-snippets']
