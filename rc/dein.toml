@@ -46,6 +46,9 @@ repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
 repo = 'w0rp/ale'
+hook_add = '''
+  source ~/.config/nvim/plugins/ale.vim
+'''
 
 [[plugins]]
 repo = 'osyo-manga/vim-over'
