@@ -2,6 +2,8 @@ if &compatible
 	set nocompatible
 endif
 
+let g:python3_host_prog = expand('/Users/matsune/.pyenv/shims/python3')
+
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -29,8 +31,6 @@ endif
 
 filetype plugin indent on
 syntax enable
-
-let g:python3_host_prog = expand('/usr/local/bin/python3')
 
 runtime! rc/options.rc.vim
 runtime! rc/keymap.rc.vim
