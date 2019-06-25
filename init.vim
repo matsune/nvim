@@ -2,7 +2,13 @@ if &compatible
 	set nocompatible
 endif
 
-let g:python3_host_prog = expand('/Users/matsune/.pyenv/shims/python3')
+" requires
+" $ pyenv install 3.7.3
+" $ pyenv virtualenv 3.7.3 neovim3
+" $ pyenv activate neovim3
+" $ pip install neovim
+" $ pyenv which python
+let g:python3_host_prog = $PYENV_ROOT.'/versions/neovim3/bin/python'
 
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
