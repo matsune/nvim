@@ -2,7 +2,7 @@ if &compatible
 	set nocompatible
 endif
 
-" requires
+""" requires
 " $ pyenv install 3.7.3
 " $ pyenv virtualenv 3.7.3 neovim3
 " $ pyenv activate neovim3
@@ -41,11 +41,11 @@ syntax enable
 runtime! rc/options.rc.vim
 runtime! rc/keymap.rc.vim
 
-" Solarized
-let g:solarized_termcolors=16
-syntax enable
-set background=dark
-colorscheme solarized
+""" Solarized
+"let g:solarized_termcolors=16
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
 " GitGutter
 set signcolumn=yes
