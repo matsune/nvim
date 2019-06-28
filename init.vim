@@ -51,3 +51,20 @@ runtime! rc/keymap.rc.vim
 set signcolumn=yes
 GitGutterEnable
 
+let s:nvim_dir = expand('~/.config/nvim')
+let s:syntax_dir = s:nvim_dir.'/syntax'
+
+function! s:install_syntax(filename, url)
+  let s:file_dir = s:syntax_dir.'/'.a:filename
+  if !filereadable(s:file_dir)
+    echo 'downloading '.a:filename.' to '.s:file_dir
+    call system('wget -O '.s:file_dir.' '.a:url)
+  endif
+endfunction
+
+if !isdirectory(s:syntax_dir)
+  call mkdir(s:syntax_dir)
+endif
+
+call s:install_syntax('vue.vim', 'https://raw.githubusercontent.com/posva/vim-vue/master/syntax/vue.vim')
+call s:install_syntax('ts.vim', 'https://raw.githubusercontent.com/leafgarland/typescript-vim/master/syntax/typescript.vim')
