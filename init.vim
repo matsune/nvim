@@ -58,7 +58,7 @@ function! s:install_syntax(filename, url)
   let s:file_dir = s:syntax_dir.'/'.a:filename
   if !filereadable(s:file_dir)
     echo 'downloading '.a:filename.' to '.s:file_dir
-    call system('wget -O '.s:file_dir.' '.a:url)
+    call system('curl -L '.a:url.' > '.s:file_dir)
   endif
 endfunction
 
