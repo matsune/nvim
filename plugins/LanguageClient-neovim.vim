@@ -2,6 +2,8 @@ set hidden
 
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'vue': ['vls'],
+    \ 'typescript': ['typescript-language-server', '--stdio'],
     \ }
 
 nmap <leader>v :call LanguageClient#textDocument_definition({'gotoCmd': 'split'})<CR>

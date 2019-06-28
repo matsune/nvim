@@ -22,3 +22,7 @@ rustup update
 rustup component add rls rust-analysis rust-src
 ```
 
+### Vue
+```sh
+npm install vue-language-server -g
+```

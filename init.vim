@@ -67,4 +67,6 @@ if !isdirectory(s:syntax_dir)
 endif
 
 call s:install_syntax('vue.vim', 'https://raw.githubusercontent.com/posva/vim-vue/master/syntax/vue.vim')
-call s:install_syntax('ts.vim', 'https://raw.githubusercontent.com/leafgarland/typescript-vim/master/syntax/typescript.vim')
+
+"au BufRead,BufNewFile,BufReadPre *.ts set filetype=typescript
+

@@ -58,3 +58,7 @@ hook_add = '''
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
